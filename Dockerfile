@@ -2,7 +2,7 @@ FROM node:10.13-alpine
 
 WORKDIR /app
 
-COPY ["package.json", "package-lock.json*", "./"]
+COPY ["package.json", "./"]
 
 RUN apk --no-cache add curl
 
