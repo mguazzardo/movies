@@ -6,7 +6,7 @@ COPY ["package.json", "package-lock.json*", "./"]
 
 RUN apk --no-cache add curl
 
-RUN npm cache clean --force && npm install
+RUN npm cache verify && npm install
 
 COPY . .
 
